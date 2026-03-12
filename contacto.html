@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto y Registro - Spinz Fitness</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body class="page-secondary">
+
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <div class="logo-placeholder">
+                        SPINZ<span>FITNESS</span>
+                    </div>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html#inicio">Inicio</a></li>
+                    <li><a href="index.html#servicios">Servicios</a></li>
+                    <li><a href="horarios.html">Horarios</a></li>
+                    <li><a href="index.html#planes">Planes</a></li>
+                    <li><a href="contacto.html" class="active">Contacto</a></li>
+                </ul>
+            </nav>
+            <a href="#registro" class="btn btn-primary">Regístrate</a>
+        </div>
+    </header>
+
+    <main class="container" style="padding-top: 120px; padding-bottom: 100px;">
+        
+        <div class="grid-2-cols">
+            
+            <!-- FORMULARIO DE CONTACTO -->
+            <section class="form-section">
+                <div class="section-title" style="text-align: left;">
+                    <h2>Contáctanos</h2>
+                    <div class="underline" style="margin: 0;"></div>
+                    <p style="margin-top: 15px; color: #a1a1a1;">¿Tienes dudas? Envíanos un mensaje y te responderemos en menos de 24 horas.</p>
+                </div>
+
+                <form class="gym-form">
+                    <div class="form-group">
+                        <label for="nombre">Nombre Completo</label>
+                        <input type="text" id="nombre" placeholder="Tu nombre..." required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" placeholder="tu@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="asunto">Asunto</label>
+                        <select id="asunto">
+                            <option value="info">Información General</option>
+                            <option value="queja">Sugerencias o Quejas</option>
+                            <option value="entrenamiento">Entrenamiento Personal</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Enviar Mensaje</button>
+                </form>
+            </section>
+
+            <!-- SISTEMA DE REGISTRO / SUSCRIPCIÓN -->
+            <section id="registro" class="form-section">
+                <div class="section-title" style="text-align: left;">
+                    <h2>Únete a la Élite</h2>
+                    <div class="underline" style="margin: 0;"></div>
+                    <p style="margin-top: 15px; color: #a1a1a1;">Crea tu cuenta hoy y obtén un pase de 3 días gratis para nuestras instalaciones.</p>
+                </div>
+
+                <form class="gym-form registration-form">
+                    <div class="form-group">
+                        <label for="reg-nombre">Nombre</label>
+                        <input type="text" id="reg-nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-email">Email</label>
+                        <input type="email" id="reg-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-pass">Contraseña</label>
+                        <input type="password" id="reg-pass" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-plan">Selecciona tu Plan</label>
+                        <div class="plan-options">
+                            <label class="plan-radio">
+                                <input type="radio" name="plan" value="basico" checked>
+                                <span>Básico</span>
+                            </label>
+                            <label class="plan-radio">
+                                <input type="radio" name="plan" value="premium">
+                                <span>Premium</span>
+                            </label>
+                            <label class="plan-radio">
+                                <input type="radio" name="plan" value="anual">
+                                <span>Anual</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="terminos" required>
+                        <label for="terminos">Acepto los términos y condiciones de Spinz Fitness.</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Crear mi Cuenta</button>
+                </form>
+            </section>
+
+        </div>
+
+        <!-- CHAT EN LÍNEA (SIMULACIÓN UI) -->
+        <div class="chat-widget">
+            <div class="chat-header">
+                <div class="status-dot"></div>
+                <span>Chat en Línea - Soporte</span>
+            </div>
+            <div class="chat-body">
+                <div class="chat-msg bot">¡Hola! Soy el asistente de Spinz Fitness. ¿En qué puedo ayudarte hoy?</div>
+                <div class="chat-msg user">Hola, me gustaría saber los horarios de las clases de CrossFit.</div>
+                <div class="chat-msg bot">¡Claro! Tenemos clases de CrossFit de Lunes a Viernes a las 6:00 AM, 5:00 PM y 7:00 PM.</div>
+            </div>
+            <div class="chat-footer">
+                <input type="text" placeholder="Escribe un mensaje...">
+                <button>➤</button>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Spinz Fitness</h4>
+                    <p>Transformando vidas a través del sudor y la disciplina desde 2014.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p>Calle de la Fuerza 123, Ciudad Fitness</p>
+                    <p>Tel: +1 234 567 890</p>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2024 Spinz Fitness. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
